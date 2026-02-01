@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Résumé – Communication Interpersonnelle</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    color: #2c3e50;
+    line-height: 1.7;
+    padding: 40px 20px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* TITLE */
+  .title-block {
+    background: linear-gradient(135deg, #1a2a4a, #2e5090);
+    color: white;
+    border-radius: 16px;
+    padding: 42px 40px;
+    text-align: center;
+    margin-bottom: 36px;
+    box-shadow: 0 6px 24px rgba(30,50,100,0.3);
+  }
+  .title-block h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; }
+  .title-block p { font-size: 14px; opacity: 0.85; font-style: italic; }
+
+  /* MODULE SECTIONS */
+  .module {
+    background: white;
+    border-radius: 14px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+    border: 1px solid #e2e8f0;
+  }
+  .module-header {
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+  }
+  .module-header .num {
+    background: #2e5090;
+    color: white;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 16px;
+    flex-shrink: 0;
+  }
+  .module-header h2 { font-size: 17px; font-weight: 600; color: #1a2a4a; }
+  .module-body { padding: 0 28px 26px 28px; }
+
+  /* SUB-SECTIONS */
+  .sub { margin-bottom: 22px; }
+  .sub-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2e5090;
+    border-left: 4px solid #2e5090;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+  }
+  .sub p { font-size: 14px; color: #3d4f6a; margin-bottom: 8px; }
+
+  /* DEFINITION BOX */
+  .def-box {
+    background: #eef3fb;
+    border: 1px solid #c8d8f0;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #2c3e50;
+  }
+  .def-box strong { color: #2e5090; }
+
+  /* KEY POINTS LIST */
+  .key-list { list-style: none; padding: 0; }
+  .key-list li {
+    font-size: 14px;
+    color: #3d4f6a;
+    padding: 6px 0 6px 22px;
+    position: relative;
+  }
+  .key-list li::before {
+    content: "▸";
+    color: #2e5090;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+  }
+
+  /* TWO-COL TABLE */
+  .two-col { width: 100%; border-collapse: collapse; margin: 10px 0 14px; }
+  .two-col th {
+    background: #2e5090;
+    color: white;
+    text-align: left;
+    padding: 9px 14px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .two-col td {
+    padding: 8px 14px;
+    font-size: 13.5px;
+    color: #3d4f6a;
+    border-bottom: 1px solid #e8edf2;
+    vertical-align: top;
+  }
+  .two-col tr:nth-child(even) td { background: #f7f9fc; }
+
+  /* HIGHLIGHT / ATTENTION BOX */
+  .highlight {
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 13.5px;
+    color: #6d4c00;
+    margin: 10px 0;
+  }
+  .highlight strong { color: #e65100; }
+
+  /* SCHEMA / FLOWCHART */
+  .schema {
+    background: #f1f5fb;
+    border: 1px solid #d0ddf0;
+    border-radius: 10px;
+    padding: 16px 20px;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 13.5px;
+    color: #2c3e50;
+  }
+  .schema .arrow { color: #2e5090; font-weight: 700; margin: 0 6px; }
+  .schema .step {
+    display: inline-block;
+    background: #dce9f5;
+    border: 1px solid #b0cce8;
+    border-radius: 8px;
+    padding: 6px 14px;
+    margin: 3px;
+    font-weight: 600;
+    color: #1a2a4a;
+  }
+
+  /* FOOTER */
+  .footer { text-align: center; margin-top: 36px; font-size: 12px; color: #8a9bb5; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- TITRE -->
+  <div class="title-block">
+    <h1>📚 Guide de Révision – Communication Interpersonnelle</h1>
+    <p>Résumé complet des 5 cours pour votre examen</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- COURS 1 -->
+  <!-- ============================================================ -->
+  <div class="module">
+    <div class="module-header">
+      <div class="num">1</div>
+      <h2>Le champ de la communication interpersonnelle</h2>
+    </div>
+    <div class="module-body">
+
+      <div class="sub">
+        <div class="sub-title">Définition de la communication</div>
+        <div class="def-box">
+          <strong>Communication</strong> : Action de transmettre un message entre un émetteur et un récepteur à l'aide d'un code commun, dans un contexte donné, via un ou plusieurs canaux.
+        </div>
+        <p>Elle est bilatérale (bidirectionnelle) : ce n'est pas seulement "parler", c'est aussi écouter et s'adapter au contexte.</p>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les éléments de base (Modèle de Shannon & Weaver)</div>
+        <div class="schema">
+          <span class="step">Émetteur</span>
+          <span class="arrow">→</span>
+          <span class="step">Encodage</span>
+          <span class="arrow">→</span>
+          <span class="step">Message</span>
+          <span class="arrow">→</span>
+          <span class="step">Canal</span>
+          <span class="arrow">→</span>
+          <span class="step">Décodage</span>
+          <span class="arrow">→</span>
+          <span class="step">Récepteur</span>
+        </div>
+        <ul class="key-list">
+          <li><strong>Émetteur</strong> : celui qui initie le message</li>
+          <li><strong>Encodage</strong> : transformation de l'idée en langage (mots, gestes, sons)</li>
+          <li><strong>Message</strong> : le contenu transmis</li>
+          <li><strong>Canal</strong> : le moyen utilisé (voix, écrit, téléphone, etc.)</li>
+          <li><strong>Décodage</strong> : interprétation du message par le récepteur</li>
+          <li><strong>Récepteur</strong> : celui qui reçoit et interprète</li>
+          <li><strong>Rétroaction (feedback)</strong> : la réponse du récepteur à l'émetteur</li>
+        </ul>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Le processus de communication</div>
+        <p>Il s'agit d'un cycle continu : l'émetteur encode → transmet via un canal → le récepteur décode → il fournit un feedback → l'émetteur ajuste. C'est un processus <strong>interactif et dynamique</strong>.</p>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les obstacles à la communication</div>
+        <table class="two-col">
+          <tr><th>Type d'obstacle</th><th>Exemples</th></tr>
+          <tr><td><strong>Obstacles liés à l'émetteur</strong></td><td>Manque de clarté, préjugés, émotions incontrôlées, vocabulaire inadapté</td></tr>
+          <tr><td><strong>Obstacles liés au canal</strong></td><td>Bruit, distance, mauvaise qualité de signal</td></tr>
+          <tr><td><strong>Obstacles liés au récepteur</strong></td><td>Préjugés, manque d'attention, mauvaise écoute, résistance au changement</td></tr>
+          <tr><td><strong>Obstacles culturels/sociaux</strong></td><td>Différences de valeurs, de langues, de niveaux socio-culturels</td></tr>
+        </table>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">La perception subjective</div>
+        <div class="def-box">
+          Chaque personne perçoit la réalité de façon <strong>unique</strong>, influencée par ses expériences passées, ses émotions, ses croyances et son cadre de référence.
+        </div>
+        <p>Deux personnes peuvent entendre le même message et l'interpréter très différemment. C'est pourquoi la communication ne dépend pas seulement de ce qu'on dit, mais de ce que l'autre <em>perçoit</em>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- COURS 2 -->
+  <!-- ============================================================ -->
+  <div class="module">
+    <div class="module-header">
+      <div class="num">2</div>
+      <h2>L'écoute active / bienveillante</h2>
+    </div>
+    <div class="module-body">
+
+      <div class="sub">
+        <div class="sub-title">Définition</div>
+        <div class="def-box">
+          <strong>L'écoute active</strong> : une forme d'écoute où le récepteur s'engage totalement pour comprendre le message de l'émetteur, sans jugement, en montrant son engagement par des comportements verbaux et non verbaux.
+        </div>
+        <p>Elle a été popularisée par <strong>Carl Rogers</strong> en lien avec l'approche centrée sur la personne.</p>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les attitudes qui gênent l'écoute active</div>
+        <ul class="key-list">
+          <li><strong>Juger</strong> : évaluer ce que dit l'autre avant même de bien comprendre</li>
+          <li><strong>Conseiller prématurément</strong> : donner des solutions avant que l'autre ait terminé de s'exprimer</li>
+          <li><strong>Projeter ses propres sentiments</strong> : supposer que l'autre ressent ce qu'on ressentirait soi-même</li>
+          <li><strong>Interrompre</strong> : ne pas laisser l'autre s'exprimer complètement</li>
+          <li><strong>Se distraire</strong> : ne pas accorder son attention complète</li>
+          <li><strong>Minimiser</strong> : dire "c'est pas grave" ou "ça arrive à tout le monde"</li>
+        </ul>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les techniques d'écoute active</div>
+        <table class="two-col">
+          <tr><th>Technique</th><th>Description</th></tr>
+          <tr><td><strong>Reformulation</strong></td><td>Répéter le message avec ses propres mots pour vérifier la compréhension ("Si je te comprends bien, tu dis que…")</td></tr>
+          <tr><td><strong>Écho</strong></td><td>Répéter les derniers mots de l'interlocuteur pour l'inciter à poursuivre</td></tr>
+          <tr><td><strong>Questions ouvertes</strong></td><td>Poser des questions qui ne se répondent pas par oui/non ("Comment te sens-tu ?" "Qu'est-ce qui te pose problème ?")</td></tr>
+          <tr><td><strong>Silences</strong></td><td>Laisser des pauses pour permettre à l'autre de réfléchir et de continuer</td></tr>
+          <tr><td><strong>Empathie verbale</strong></td><td>Exprimer la compréhension des sentiments ("Je comprends que ça te préoccupe…")</td></tr>
+          <tr><td><strong>Encouragements</strong></td><td>Signaux verbaux positifs : "Je vous écoute", "C'est intéressant", nodding</td></tr>
+        </table>
+      </div>
+
+      <div class="highlight">
+        ⚡ <strong>Astuce clé :</strong> L'écoute active ne consiste pas à parler, c'est avant tout à <em>montrer</em> que vous écoutez. Le but est de créer un environnement sûr où l'interlocuteur se sent entendu et compris.
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- COURS 3 -->
+  <!-- ============================================================ -->
+  <div class="module">
+    <div class="module-header">
+      <div class="num">3</div>
+      <h2>La communication verbale et non verbale</h2>
+    </div>
+    <div class="module-body">
+
+      <div class="sub">
+        <div class="sub-title">Concept fondamental : la communication totale</div>
+        <div class="def-box">
+          D'après <strong>Albert Mehrabian</strong>, dans une communication émotionnelle, le message est transmis à :
+          <br>• <strong>7 %</strong> par les mots (contenu verbal)
+          <br>• <strong>38 %</strong> par le ton de la voix (paraverbal)
+          <br>• <strong>55 %</strong> par le langage du corps (non verbal)
+        </div>
+        <p>La communication verbale et non verbale forment un <strong>tout intégré</strong> : elles se complètent et parfois se contredisent. Il faut être conscient des deux niveaux.</p>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les 7 éléments du langage du corps</div>
+        <table class="two-col">
+          <tr><th>#</th><th>Élément</th><th>Ce qu'il communique</th></tr>
+          <tr><td>1</td><td><strong>Ton, débit et volume</strong></td><td>Émotion, confiance, urgence. Un débit rapide = stress ; un volume fort = autorité</td></tr>
+          <tr><td>2</td><td><strong>Prononciation & articulation</strong></td><td>Clarté du message, niveau de préparation, respect de l'interlocuteur</td></tr>
+          <tr><td>3</td><td><strong>Respiration</strong></td><td>Indicateur de stress ou de calme ; une bonne respiration aide à better contrôler ses émotions et sa voix</td></tr>
+          <tr><td>4</td><td><strong>Proxémie</strong></td><td>La distance entre deux personnes. Elle varie selon le niveau d'intimité : zone publique (>1,2m), zone sociale (0,6–1,2m), zone personnelle (0,15–0,6m), zone d'intimité (&lt;0,15m)</td></tr>
+          <tr><td>5</td><td><strong>Kinésique</strong></td><td>Les mouvements du corps entiers (posture, orientation corporelle). Une posture ouverte = ouverture ; fermée = défense</td></tr>
+          <tr><td>6</td><td><strong>Regard & contact visuel</strong></td><td>Montre l'engagement, la confiance, l'intérêt. Un regard évité peut signaler un manque de confiance ou de sincérité</td></tr>
+          <tr><td>7</td><td><strong>Gestuelle</strong></td><td>Les gestes des mains illustrent ou amplifient le message verbal. Gestes ouverts = ouverture ; croisement des bras = fermeture</td></tr>
+        </table>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Clés pour une prise de parole en public réussie</div>
+        <ul class="key-list">
+          <li><strong>Préparation</strong> : connaître son sujet, structurer son discours</li>
+          <li><strong>Regard</strong> : maintenir un contact visuel avec le public (balayer la salle)</li>
+          <li><strong>Voix</strong> : varier le ton, le débit, utiliser les pauses stratégiques</li>
+          <li><strong>Posture</strong> : debout, droite, ouverte — projeter la confiance</li>
+          <li><strong>Gestes</strong> : naturels, mesurés, illustrant le propos</li>
+          <li><strong>Écoute du public</strong> : observer les réactions et s'adapter en temps réel</li>
+          <li><strong>Gérer le trac</strong> : respiration profonde, visualisation positive avant de commencer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- COURS 4 -->
+  <!-- ============================================================ -->
+  <div class="module">
+    <div class="module-header">
+      <div class="num">4</div>
+      <h2>Améliorer la communication avec la PNL</h2>
+    </div>
+    <div class="module-body">
+
+      <div class="sub">
+        <div class="sub-title">Qu'est-ce que la PNL ?</div>
+        <div class="def-box">
+          <strong>Programmation Neuro-Linguistique (PNL)</strong> : une approche créée par <strong>Richard Bandler</strong> et <strong>John Grinder</strong> dans les années 1970. Elle étudie le lien entre le cerveau (neuro), le langage (linguistique) et les comportements (programmation) pour améliorer la communication et le développement personnel.
+        </div>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les postulats de base de la PNL</div>
+        <ul class="key-list">
+          <li><strong>La carte n'est pas le territoire</strong> : notre perception de la réalité n'est qu'une représentation subjective, pas la réalité elle-même</li>
+          <li><strong>Chaque personne a ses propres ressources</strong> : tout le monde possède en lui les capacités nécessaires pour changer</li>
+          <li><strong>Il n'y a pas d'échec, seulement des retours d'expérience</strong> : chaque résultat non attendu est une information utile</li>
+          <li><strong>Le comportement a une intention positive</strong> : derrière chaque comportement se cache une intention bien fondée</li>
+          <li><strong>La communication est un processus, pas un événement</strong> : elle évolue en permanence</li>
+        </ul>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les principales techniques de la PNL</div>
+        <table class="two-col">
+          <tr><th>Technique</th><th>Description</th></tr>
+          <tr><td><strong>Calibration</strong></td><td>Observer attentivement les comportements non verbaux de l'interlocuteur pour mieux le comprendre</td></tr>
+          <tr><td><strong>Rapport (Mirroring)</strong></td><td>Established une relation de confiance en synchronisant son langage corporel avec celui de l'autre (miroir)</td></tr>
+          <tr><td><strong>Ancrage</strong></td><td>Associer un comportement ou un état émotionnel à un stimulus particulier (geste, mot, toucher)</td></tr>
+          <tr><td><strong>Recadrage (Reframing)</strong></td><td>Changer la façon de percevoir une situation pour lui donner un sens nouveau et positif</td></tr>
+          <tr><td><strong>Modélisation</strong></td><td>Observer et reproduire les comportements d'une personne compétente pour acquérir les mêmes capacités</td></tr>
+          <tr><td><strong>Système de représentation sensoriel (VACO)</strong></td><td><strong>V</strong>isuel, <strong>A</strong>uditif, <strong>C</strong>inesthétique, <strong>O</strong>lfactif/Gustatif : chaque personne a un canal dominant pour percevoir et traiter l'information</td></tr>
+        </table>
+      </div>
+
+      <div class="highlight">
+        ⚡ <strong>En résumé :</strong> La PNL en communication interpersonnelle permet de mieux <em>observer</em> l'interlocuteur (calibration), de créer un <em>lien de confiance</em> (rapport), et de <em>recadrer</em> les situations pour une communication plus efficace et positive.
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- COURS 5 -->
+  <!-- ============================================================ -->
+  <div class="module">
+    <div class="module-header">
+      <div class="num">5</div>
+      <h2>Outils et techniques d'animation</h2>
+    </div>
+    <div class="module-body">
+
+      <div class="sub">
+        <div class="sub-title">Définition des concepts clés</div>
+        <table class="two-col">
+          <tr><th>Concept</th><th>Définition</th></tr>
+          <tr><td><strong>Animation</strong></td><td>Donner de la vie et du dynamisme à un groupe ou un événement ; guider les participants vers un objectif commun</td></tr>
+          <tr><td><strong>Facilitation</strong></td><td>Créer les conditions favorables pour que le groupe puisse travailler efficacement ensemble ; le facilitateur n'impose pas ses opinions</td></tr>
+          <tr><td><strong>Modération</strong></td><td>Régir les échanges, maintenir le cadre, s'assurer que chacun peut s'exprimer ; plus centré sur le contrôle du format</td></tr>
+        </table>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les outils d'animation</div>
+        <ul class="key-list">
+          <li><strong>Brainstorming</strong> : génération d'idées libre et sans jugement en groupe</li>
+          <li><strong>Travail en sous-groupes</strong> : diviser le groupe pour favoriser la participation de tous</li>
+          <li><strong>Sondage / vote</strong> : obtenir rapidement l'avis de chacun</li>
+          <li><strong>Tableau blanc / flip chart</strong> : outil visuel pour capitaliser les idées</li>
+          <li><strong>Questions ice-breaker</strong> : créer une atmosphère détendue au début</li>
+        </ul>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les techniques d'animation (débat, réunion)</div>
+        <ul class="key-list">
+          <li><strong>Technique du débat structuré</strong> : chaque parti expose ses arguments, puis échange avec des règles claires (temps de parole, respect des tour de parole)</li>
+          <li><strong>Technique du tour de table</strong> : chaque participant s'exprime à tour de rôle, personne ne peut être interrompu</li>
+          <li><strong>Technique du 6×3×5 (Brainwriting)</strong> : 6 personnes écrivent 3 idées en 5 minutes sur une feuille, puis les fiches sont passées</li>
+          <li><strong>Méthode des questions ouvertes/fermées</strong> : orienter les discussions selon le besoin</li>
+        </ul>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les qualités d'un bon animateur</div>
+        <ul class="key-list">
+          <li><strong>Écoute active</strong> : être attentif à tous les participants</li>
+          <li><strong>Neutralité</strong> : ne pas imposer son avis, rester objectif</li>
+          <li><strong>Adaptabilité</strong> : ajuster son approche selon le groupe et la situation</li>
+          <li><strong>Dynamisme</strong> : créer une énergie positive et motivante</li>
+          <li><strong>Clarté</strong> : communiquer les objectifs et les règles de façon claire</li>
+          <li><strong>Gestion du temps</strong> : respecter le cadre horaire prévu</li>
+          <li><strong>Empathie</strong> : comprendre les besoins et les sentiments du groupe</li>
+        </ul>
+      </div>
+
+      <div class="sub">
+        <div class="sub-title">Les styles d'animation</div>
+        <table class="two-col">
+          <tr><th>Style</th><th>Caractéristique</th></tr>
+          <tr><td><strong>Directif</strong></td><td>L'animateur guide fortement, donne les instructions, peu de place à l'autonomie du groupe</td></tr>
+          <tr><td><strong>Participatif</strong></td><td>L'animateur encourage l'engagement de tous, favourise les échanges et la co-construction</td></tr>
+          <tr><td><strong>Démocratique</strong></td><td>Les décisions sont prises collectivement ; l'animateur facilite sans imposer</td></tr>
+          <tr><td><strong>Laissez-faire</strong></td><td>L'animateur intervient peu, le groupe évolue de manière plus autonome (risque de manque de cadre)</td></tr>
+        </table>
+      </div>
+
+      <div class="highlight">
+        ⚡ <strong>Distinction clé :</strong> Un animateur <em>guide</em>, un facilitateur <em>crée les conditions</em>, un modérateur <em>contrôle les échanges</em>. Ces trois rôles peuvent être cumulés par une même personne selon la situation.
+      </div>
+    </div>
+  </div>
+
+  <!-- SYNTHESE RAPIDE -->
+  <div class="module" style="border: 2px solid #2e5090;">
+    <div class="module-header" style="background: #eef3fb;">
+      <div class="num" style="background: #e65100;">✓</div>
+      <h2>Synthèse rapide – Points à retenir pour l'examen</h2>
+    </div>
+    <div class="module-body" style="margin-top: 6px;">
+      <ul class="key-list">
+        <li><strong>Communication ≠ juste parler.</strong> C'est un processus bidirectionnel avec feedback.</li>
+        <li><strong>Les obstacles</strong> peuvent venir de l'émetteur, du récepteur, du canal ou du contexte culturel.</li>
+        <li><strong>La perception est subjective</strong> : deux personnes ne perçoivent jamais exactement le même message.</li>
+        <li><strong>L'écoute active</strong> = reformulation, questions ouvertes, silences, empathie, sans jugement.</li>
+        <li><strong>55% du message</strong> passe par le langage du corps (Mehrabian) : regard, posture, gestes, proxémie.</li>
+        <li><strong>La PNL</strong> s'appuie sur l'observation (calibration), la confiance (rapport) et le changement de perspective (recadrage).</li>
+        <li><strong>Animation vs Facilitation vs Modération</strong> : trois rôles distincts mais complémentaires.</li>
+        <li><strong>Le style participatif</strong> est généralement le plus efficace pour favoriser l'engagement du groupe.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">Résumé préparé pour révision — Bonne chance à l'examen ! 🎯</div>
+</div>
+</body>
+</html>
